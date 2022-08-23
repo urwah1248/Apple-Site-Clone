@@ -422,8 +422,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .nav-item {
@@ -630,6 +630,10 @@ h3 {
   margin-right: 1.25rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -672,20 +676,32 @@ h3 {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
 .bg-\[url\(\/src\/media\/iphone13\.jpg\)\] {
   background-image: url(/src/media/iphone13.jpg);
 }
 
-.bg-\[url\(\/src\/media\/iphones13\.jpg\)\] {
-  background-image: url(/src/media/iphones13.jpg);
+.bg-\[url\(src\\media\\macbookpro13\.jpg\)\] {
+  background-image: url(src\media\macbookpro13.jpg);
+}
+
+.bg-\[url\(src\/media\\macbookpro13\.jpg\)\] {
+  background-image: url(src/media\macbookpro13.jpg);
+}
+
+.bg-\[url\(src\/media\/macbookpro13\.jpg\)\] {
+  background-image: url(src/media/macbookpro13.jpg);
+}
+
+.bg-\[url\(\/src\/media\/macbookpro13\.jpg\)\] {
+  background-image: url(/src/media/macbookpro13.jpg);
 }
 
 .bg-contain {
   background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-center {
@@ -772,6 +788,11 @@ h3 {
 .text-applepink {
   --tw-text-opacity: 1;
   color: rgb(202 33 102 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .blur {
