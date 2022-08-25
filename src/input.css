@@ -4,15 +4,15 @@
 
 @layer base {
     h1 {
-      @apply text-5xl font-semibold;
+      @apply md:text-5xl text-3xl font-semibold;
     }
     h2 {
-      @apply text-2xl;
+      @apply md:text-2xl text-xl;
     }
     h3{
       @apply text-5xl;
     }
     .nav-item{
-      @apply mx-auto cursor-pointer hover:text-white;
+      @apply md:mx-1 px-1 cursor-pointer hover:text-white;
     }
 }
