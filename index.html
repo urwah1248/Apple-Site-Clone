@@ -12,7 +12,7 @@
 </head>
 <body>
     <nav id="header" class="w-full fixed bg-gray-700 shadow-lg " style="background-color:rgba(0,0,0,0.8); backdrop-filter: blur(20px);">
-        <div class="w-full md:flex mt-0 px-6 justify-between items-center">
+        <div class="w-full md:flex mt-0 px-6 justify-center items-center">
             <div class="w-full flex flex-row md:hidden mt-0 px-6 justify-between items-center select-none">
                 <label for="menu-toggle" class="cursor-pointer md:hidden flex">
                     <svg class="fill-current text-gray-300 my-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
@@ -28,9 +28,12 @@
                 </div> 
             </div>
            
-           <div class="hidden md:flex md:items-center md:w-auto md:mx-auto w-full order-3 md:order-1" id="menu">
+           <div class="hidden md:flex md:items-center md:w-full md:mx-5 w-full order-3 md:order-1 justify-evenly" id="menu">
               <nav>
-                 <ul class="md:flex ml-4 md:w-full items-center justify-center md:text-center text-xs text-gray-300 pt-4 md:pt-0 font-extralight">
+                 <ul class="md:flex ml-4 md:ml-0 md:w-full items-center justify-center md:mx-auto md:text-center text-xs text-gray-300 pt-4 md:pt-0 font-extralight">
+                    <div class="searchbar flex flex-row mb-2 items-center md:hidden w-full bg-zinc-800 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search flex mr-3 ml-3 my-2" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg><input class="inline-block my-1 w-1/2 bg-inherit text-black p-1 text-lg" type="text">
+                    </div>
                     <li class="nav-item hidden md:flex"><a href=""><img style="height: 40px; width: 40px;" src="src/media/applelogo.svg" alt="apple"></a></li>
                     <li class="nav-item md:hidden"><a href="">Home</a></li>
                     <li class="nav-item"><a href="">Store</a></li>
@@ -45,8 +48,7 @@
                     <li class="nav-item"><a href="">Support</a></li>
                     <li class="nav-item md:flex hidden"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></a></li>
                     <li class="nav-item md:flex hidden"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a></li>
-                    <li class="nav-item nav-icon md:hidden flex"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></a></li>
-                    <li class="nav-item nav-icon md:hidden flex"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a></li>
+                    
                 </ul>
               </nav>
            </div>

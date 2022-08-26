@@ -31,6 +31,6 @@
       @apply flex md:flex md:items-center md:w-auto md:mx-auto w-full order-3 md:order-1;
     }
     .nav-icon{
-      @apply p-1 my-2 h-[30px] w-[30px] inline-block pr-[25%]
+      @apply p-1 my-2 h-[30px] w-[30px] pr-[25%]
     }
 }
