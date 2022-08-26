@@ -13,6 +13,24 @@
       @apply text-5xl;
     }
     .nav-item{
-      @apply md:mx-1 px-1 cursor-pointer hover:text-white;
+      @apply md:mx-1 px-1 cursor-pointer hover:text-white md:py-0 py-2 md:text-xs text-xl font-semibold md:font-extralight;
+    }
+    .tile-section{
+      @apply flex md:flex-row flex-col md:mx-10 md:my-5 justify-between;
+    }
+    .tile-light{
+      @apply text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] bg-white bg-no-repeat bg-cover bg-center ;
+    }
+    .tile-dark{
+      @apply text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] text-gray-200 bg-no-repeat bg-cover bg-center ;
+    }
+    .menu-close{
+      @apply hidden md:flex md:items-center md:w-auto md:mx-auto w-full order-3 md:order-1;
+    }
+    .menu-open{
+      @apply flex md:flex md:items-center md:w-auto md:mx-auto w-full order-3 md:order-1;
+    }
+    .nav-icon{
+      @apply p-1 my-2 h-[30px] w-[30px] inline-block pr-[25%]
     }
 }

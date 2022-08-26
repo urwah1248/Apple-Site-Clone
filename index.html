@@ -7,27 +7,32 @@
     <link rel="icon" type="image/x-icon" href="src/media/favicon.png">
     <link href="dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="src/style.css">
-    <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <!-- <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet"> -->
     <title>Apple</title>
 </head>
 <body>
-    <nav id="header" class="w-full fixed bg-gray-700 shadow-lg " style="background-color:rgba(0,0,0,0.8)">
+    <nav id="header" class="w-full fixed bg-gray-700 shadow-lg " style="background-color:rgba(0,0,0,0.8); backdrop-filter: blur(20px);">
         <div class="w-full md:flex mt-0 px-6 justify-between items-center">
-           <label for="menu-toggle" class="cursor-pointer md:hidden flex">
-                <svg class="fill-current text-gray-300 my-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <title>menu</title>
-                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-                </svg>
-                <a href="" class="mx-auto"><img class="block" style="height: 40px; width: 40px;" src="src/media/applelogo.svg" alt="apple"></a>
-                <a href="" class="fill-current text-gray-300 my-auto"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a>
+            <div class="w-full flex flex-row md:hidden mt-0 px-6 justify-between items-center select-none">
+                <label for="menu-toggle" class="cursor-pointer md:hidden flex">
+                    <svg class="fill-current text-gray-300 my-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <title>menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </label>
+                <button class="hidden" type="button" id="menu-toggle" onclick="classToggle()"></button>
 
-            </label>
-           <input class="hidden" type="checkbox" id="menu-toggle">
+                <div class="mob-navbar w-full flex md:hidden items-start justify-center text-center">
+                    <img class="flex mx-auto" style="height: 40px; width: 40px;" src="src/media/applelogo.svg" alt="apple">
+                    <a href="" class="fill-current text-gray-300 my-auto"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a>
+                </div> 
+            </div>
            
            <div class="hidden md:flex md:items-center md:w-auto md:mx-auto w-full order-3 md:order-1" id="menu">
               <nav>
-                 <ul class="md:flex md:w-full items-center justify-center md:text-center text-xs text-gray-300 pt-4 md:pt-0 font-extralight">
-                    <li class="nav-item"><a href=""><img style="height: 40px; width: 40px;" src="src/media/applelogo.svg" alt="apple"></a></li>
+                 <ul class="md:flex ml-4 md:w-full items-center justify-center md:text-center text-xs text-gray-300 pt-4 md:pt-0 font-extralight">
+                    <li class="nav-item hidden md:flex"><a href=""><img style="height: 40px; width: 40px;" src="src/media/applelogo.svg" alt="apple"></a></li>
+                    <li class="nav-item md:hidden"><a href="">Home</a></li>
                     <li class="nav-item"><a href="">Store</a></li>
                     <li class="nav-item"><a href="">Mac</a></li>
                     <li class="nav-item"><a href="">iPad</a></li>
@@ -38,8 +43,10 @@
                     <li class="nav-item"><a href="">Only on Apple</a></li>
                     <li class="nav-item"><a href="">Accessories</a></li>
                     <li class="nav-item"><a href="">Support</a></li>
-                    <li class="nav-item"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></a></li>
-                    <li class="nav-item"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a></li>
+                    <li class="nav-item md:flex hidden"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></a></li>
+                    <li class="nav-item md:flex hidden"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a></li>
+                    <li class="nav-item nav-icon md:hidden flex"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg></a></li>
+                    <li class="nav-item nav-icon md:hidden flex"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a></li>
                 </ul>
               </nav>
            </div>
@@ -71,7 +78,7 @@
         <div class="md:container mx-auto md:h-screen">
             <div class="text-center pt-10 md:h-screen h-[650px] w-full bg-[url('../src/media/iphone13.jpg')] bg-no-repeat bg-center bg-cover">
                 <div class="unicef text-center">
-                    <p class="link py-5"><img class="inline-block sm:px-5" src="src/media/unicef.png" alt=""><span class="block sm:inline w-1/2 text-center mx-auto">Donate to support families affected by the war in Ukraine</span></p>
+                    <p class="link py-5"><img class="inline-block sm:px-5" src="src/media/unicef.png" alt=""><span class="block sm:inline w-3/5 text-center mx-auto">Donate to support families affected by the war in Ukraine</span></p>
                 </div>
                 <h1 class="font-semibold leading-none">iPhone 13</h1>
                 <h2 class="leading-10 ">Your new superpower.</h2>
@@ -96,15 +103,15 @@
         </div>
 
         <!-- Tile Section -->
-        <div class="flex md:flex-row flex-col md:m-10 justify-between">
-            <div class="text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] bg-white bg-no-repeat bg-cover bg-center bg-[url('../src/media/macbookair.png')]">
+        <div class="tile-section">
+            <div class="tile-light bg-[url('../src/media/macbookair.png')]">
                 <h3 class="font-normal">MacBook Air</h3>
                 <img class="mx-auto" src="src/media/m2andtext.png" alt="">
                 <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
                 <a class="link text-xl mx-5 leading-10" href="#">Buy ></a>
-
             </div>
-            <div class="text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] text-gray-200 bg-no-repeat bg-cover bg-center bg-[url('../src/media/macbookpro13.jpg')]">
+
+            <div class="tile-dark bg-[url('../src/media/macbookpro13.jpg')]">
                 <h3 class="font-normal text-4xl">MacBook Pro 13"</h3>
                 <img class="mx-auto pl-6 h-12 object-cover" src="src/media/macbookprologo.png" alt="">
                 <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
@@ -112,16 +119,15 @@
             </div>
         </div>
 
-        <div class=" flex md:flex-row flex-col md:m-10 justify-between">
-            <div class=" text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] bg-white bg-no-repeat bg-cover bg-center bg-[url('../src/media/watch.jpg')]">
-                
+        <div class="tile-section">
+            <div class="tile-light bg-[url('../src/media/watch.jpg')]">
                 <img class="mx-auto" src="src/media/watchlogo.png" alt="">
                 <h2 class="font-normal">It's our largest display yet.</h2>
                 <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
                 <a class="link text-xl mx-5 leading-10" href="#">Buy ></a>
-
             </div>
-            <div class=" text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] text-gray-200 bg-no-repeat bg-cover bg-center bg-[url('../src/media/ipadair.jpg')]">
+
+            <div class="tile-dark bg-[url('../src/media/ipadair.jpg')]">
                 <img class="mx-auto pt-2" src="src/media/ipadairlogo.png" alt="">
                 <h2 class="font-normal">Bright. Light. Full of might.</h2>
                 <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
@@ -129,5 +135,6 @@
             </div>
         </div>
     </main>
+    <script src="src/index.js"></script>
 </body>
 </html>

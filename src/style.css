@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-@import url('http://fonts.cdnfonts.com/css/sf-pro-display');
+/* @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+@import url('http://fonts.cdnfonts.com/css/sf-pro-display'); */
 body{
     font-family: 'SF Pro Display', sans-serif;
 }
@@ -14,5 +14,12 @@ span:hover{
     text-decoration: none;
 }
 
-
+ @media (max-width:768px){
+    .nav-icon{
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        padding-right: 15%;
+    }
+} 
 
