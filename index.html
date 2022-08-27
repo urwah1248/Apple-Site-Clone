@@ -11,7 +11,7 @@
     <title>Apple</title>
 </head>
 <body>
-    <nav id="header" class="w-full fixed bg-gray-700 shadow-lg " style="background-color:rgba(0,0,0,0.8); backdrop-filter: blur(20px);">
+    <nav id="header" class="w-full fixed bg-gray-700 shadow-lg" style="background-color:rgba(0,0,0,0.8); backdrop-filter: blur(20px);">
         <div class="w-full md:flex mt-0 px-6 justify-center items-center">
             <div class="w-full flex flex-row md:hidden mt-0 px-6 justify-between items-center select-none">
                 <label for="menu-toggle" class="cursor-pointer md:hidden flex">
@@ -30,9 +30,9 @@
            
            <div class="hidden md:flex md:items-center md:w-full md:mx-5 w-full order-3 md:order-1 justify-evenly" id="menu">
               <nav>
-                 <ul class="md:flex ml-4 md:ml-0 md:w-full items-center justify-center md:mx-auto md:text-center text-xs text-gray-300 pt-4 md:pt-0 font-extralight">
-                    <div class="searchbar flex flex-row mb-2 items-center md:hidden w-full bg-zinc-800 rounded-full">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search flex mr-3 ml-3 my-2" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg><input class="inline-block my-1 w-1/2 bg-inherit text-black p-1 text-lg" type="text">
+                 <ul class="md:flex ml-4 md:w-[90vw]  items-center justify-center md:text-center text-xs text-gray-300 pt-4 md:pt-0 font-extralight">
+                    <div class="searchbar flex flex-row mb-2 items-center md:hidden w-full bg-zinc-500 rounded-full text-zinc-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search flex mr-3 ml-3 my-2" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg><input class="inline-block my-1 bg-inherit text-zinc-900 p-1 mr-2 text-lg border-0 w-[90%] font-semibold placeholder:text-zinc-700" type="text" placeholder="Search apple.com">
                     </div>
                     <li class="nav-item hidden md:flex"><a href=""><img style="height: 40px; width: 40px;" src="src/media/applelogo.svg" alt="apple"></a></li>
                     <li class="nav-item md:hidden"><a href="">Home</a></li>
@@ -84,8 +84,8 @@
                 </div>
                 <h1 class="font-semibold leading-none">iPhone 13</h1>
                 <h2 class="leading-10 ">Your new superpower.</h2>
-                <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
-                <a class="link text-xl mx-5 leading-10" href="#">Buy ></a>
+                <a class="link mx-5 leading-10" href="#">Learn more ></a> 
+                <a class="link mx-5 leading-10" href="#">Buy ></a>
             </div>
         </div>
 
@@ -93,50 +93,187 @@
         <div class="container mx-auto text-center pt-10 w-full h-[620px] md:h-screen bg-[url('../src/media/iphone13prores.jpg')] md:bg-[url('../src/media/iphone13pro.jpg')] bg-no-repeat bg-center bg-cover">
             <h1 class="font-semibold leading-none">iPhone 13 Pro</h1>
             <h2 class="text-2xl leading-10">Oh. So. Pro</h2>
-            <a class="link text-xl mx-5 font-medium leading-10 hover:" href="#">Learn more ></a> 
-            <a class="link text-xl mx-5 font-medium leading-10" href="#">Buy ></a>
+            <a class="link mx-5 font-medium leading-10 hover:" href="#">Learn more ></a> 
+            <a class="link mx-5 font-medium leading-10" href="#">Buy ></a>
         </div>
 
         <!-- Ready for College -->
         <div class="container mx-auto text-center pt-10 w-full h-[620px] bg-[url('../src/media/college.jpg')] bg-no-repeat bg-center bg-cover">
             <h1 class="font-bold leading-none italic">Get <span class="text-applepink">supercharged</span> for college.</h2>
             <h2 class="text-2xl leading-8 "><span>Save on Mac or iPad.</span> <span>Plus get a gift card up to $150.</span></h2>
-            <a class="link text-xl mx-5 font-extralight leading-10" href="#">Shop Now ></a>
+            <a class="link mx-5 font-extralight leading-10" href="#">Shop Now ></a>
         </div>
 
         <!-- Tile Section -->
         <div class="tile-section">
-            <div class="tile-light bg-[url('../src/media/macbookair.png')]">
-                <h3 class="font-normal">MacBook Air</h3>
-                <img class="mx-auto" src="src/media/m2andtext.png" alt="">
-                <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
-                <a class="link text-xl mx-5 leading-10" href="#">Buy ></a>
+            <div class="tile-dark bg-black bg-auto bg-[url('../src/media/appleevent.jpg')]">
+                <div class="relative top-[72%]">
+                    <h3 class="font-semibold">Apple Event</h3>
+                    <h2 class="font-normal">Watch online on 9/7 at 10 a.m. PT.</h2>
+                    <a class="link mx-5 leading-10" href="#">Learn more ></a>
+                </div>
             </div>
 
-            <div class="tile-dark bg-[url('../src/media/macbookpro13.jpg')]">
-                <h3 class="font-normal text-4xl">MacBook Pro 13"</h3>
-                <img class="mx-auto pl-6 h-12 object-cover" src="src/media/macbookprologo.png" alt="">
-                <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
-                <a class="link text-xl mx-5 leading-10" href="#">Buy ></a>
+            <div class="tile-light  bg-[url('../src/media/macbookair.png')]">
+                <h3 class="font-normal">MacBook Air</h3>
+                <img class="mx-auto" src="src/media/m2andtext.png" alt="">
+                <a class="link mx-5 leading-10" href="#">Learn more ></a> 
+                <a class="link mx-5 leading-10" href="#">Buy ></a>
             </div>
         </div>
 
         <div class="tile-section">
+            <div class="tile-dark bg-[url('../src/media/macbookpro13.jpg')]">
+                <h3 class="font-normal text-4xl">MacBook Pro 13"</h3>
+                <img class="mx-auto pl-6 h-12 object-cover" src="src/media/macbookprologo.png" alt="">
+                <a class="link mx-5 leading-10" href="#">Learn more ></a> 
+                <a class="link mx-5 leading-10" href="#">Buy ></a>
+            </div>
+
             <div class="tile-light bg-[url('../src/media/watch.jpg')]">
                 <img class="mx-auto" src="src/media/watchlogo.png" alt="">
                 <h2 class="font-normal">It's our largest display yet.</h2>
-                <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
-                <a class="link text-xl mx-5 leading-10" href="#">Buy ></a>
+                <a class="link mx-5 leading-10" href="#">Learn more ></a> 
+                <a class="link mx-5 leading-10" href="#">Buy ></a>
             </div>
+        </div>
 
+        <div class="tile-section">
             <div class="tile-dark bg-[url('../src/media/ipadair.jpg')]">
                 <img class="mx-auto pt-2" src="src/media/ipadairlogo.png" alt="">
                 <h2 class="font-normal">Bright. Light. Full of might.</h2>
-                <a class="link text-xl mx-5 leading-10" href="#">Learn more ></a> 
-                <a class="link text-xl mx-5 leading-10" href="#">Buy ></a>
+                <a class="link mx-5 leading-10" href="#">Learn more ></a> 
+                <a class="link mx-5 leading-10" href="#">Buy ></a>
+            </div>
+
+            <div class="tile-dark bg-cover bg-[url('../src/media/applepark.jpg')]">
+                <h3 class="font-semibold">Shop with Apple Pay. <br> Support our parks.</h3>
+                <h2 class="font-normal w-4/5 mx-auto">We’re donating $10 to the National Park Foundation for each purchase made at Apple using Apple Pay through August 28.</h2>
+                <a class="mx-5 leading-none text-white no-underline hover:underline" href="#"><h2 class="leading-none">Shop now ></h2></a>
             </div>
         </div>
     </main>
+    <footer class="bg-[#f5f5f7] py-5">
+        <div class="footer w-11/12 mx-auto">
+            <div id="TOS" class="text-zinc-400 text-xs">
+            <ol class="list-decimal list-inside">
+                    <li>Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or iPad at a Qualifying Location. Only one Apple Gift Card per eligible Mac or iPad per Qualified Purchaser. Offer subject to availability. While supplies last. Qualified Purchasers shall receive a discount equal to the value of the Apple Gift Card off the price of the eligible Mac or iPad, but will be charged for all items in their cart, including the Apple Gift Card. Important notice regarding the checkout receipt and monthly statement for Apple Card Monthly Installment (ACMI) purchases with this promotion: Qualified Purchasers selecting ACMI (a 0% APR payment option) as payment type at checkout shall receive a discount equal to the value of the Apple Gift Card off the price of the eligible Mac or iPad. This will result in one ACMI installment plan over 12 months for the eligible iPad or Mac discounted by the instant credit, and a second ACMI installment plan over 12 months for the full price of the Apple Gift Card. The total combined amount charged over the two separate ACMI installment plans will reflect the original full retail price of the Eligible Product. Separately, Qualified Purchasers will receive and be charged for the Apple Gift Card in the amount of the applicable discount off the eligible Mac or iPad. ACMI is subject to credit approval and credit limit. Variable APRs for Apple Card other than ACMI range from 13.24% to 24.24% based on creditworthiness. Rates as of August 1, 2022. If you choose the pay‑in‑full or one‑time‑payment option for an ACMI‑eligible purchase instead of choosing ACMI as the payment option at checkout, that purchase will be subject to the variable APR assigned to your Apple Card. Taxes and shipping are not included in ACMI transactions and are subject to your standard purchase APR. See the Apple Card Customer Agreement at https://www.goldmansachs.com/terms-and-conditions/Apple-Card-Customer-Agreement.pdf for more information. ACMI is not available for purchases made online at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs, or on refurbished devices. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch. Available for qualifying applicants in the United States. If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about accessing this offer or applying for Apple Card. This offer cannot be combined with the Apple Employee Purchase Plan or business loyalty pricing. Availability of in‑store promotion offerings may be limited by Apple Store location closures as a result of COVID‑19. Additional restrictions apply. View full terms and conditions of offer here.</li>
+                    <li>Through August 28, 2022, Apple will donate $10 for every purchase made in the U.S. using Apple Pay on apple.com, through the Apple Store app, or at an Apple Store. Donations are limited to a maximum of one million dollars ($1,000,000). The donation goes to the National Park Foundation.</li>
+                </ol>
+                <p>Photo credit for Apple Pay promotion: “Sunset” by Poffenberger Photography. Shot at Scotts Bluff National Monument in Scotts Bluff County, Nebraska.</p>
+                <p>Major League Baseball trademarks and copyrights are used with permission of MLB Advanced Media, L.P. All rights reserved.</p>
+            </div>
+            <hr>
+            <div id="contents" class="md:grid md:grid-cols-5">
+                <div class="first-col">
+                    <ul id="shop" class="contentlist">
+                        <li class="listheading">Shop and Learn</li>
+                        <li><a href="">Store</a></li>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">Airpods</a></li>
+                        <li><a href="">TV and Home</a></li>
+                        <li><a href="">Airtag</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="second-col">
+                    <ul class="contentlist">
+                        <li class="listheading">Services</li>
+                        <li><a href="">Apple Music</a></li>
+                        <li><a href="">Apple TV+</a></li>
+                        <li><a href="">Apple Fitness+</a></li>
+                        <li><a href="">Apple News+</a></li>
+                        <li><a href="">Apple Arcade</a></li>
+                        <li><a href="">iCloud</a></li>
+                        <li><a href="">Apple One</a></li>
+                        <li><a href="">Apple Card</a></li>
+                        <li><a href="">Apple Books</a></li>
+                        <li><a href="">Apple Podcasts</a></li>
+                        <li><a href="">App Store</a></li>
+                    </ul>
+                    <ul class="contentlist">
+                        <li class="listheading">Account</li>
+                        <li><a href="">Manage your Apple ID</a></li>
+                        <li><a href="">Apple Store Account</a></li>
+                        <li><a href="">iCloud.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="third-col">
+                    <ul class="contentlist">
+                        <li class="listheading">Apple Store</li>
+                        <li><a href="">Find a Store</a></li>
+                        <li><a href="">Genius Bar</a></li>
+                        <li><a href="">Today at Apple</a></li>
+                        <li><a href="">Apple Camp</a></li>
+                        <li><a href="">Apple Store App</a></li>
+                        <li><a href="">Refurbished and Clearance</a></li>
+                        <li><a href="">Financing</a></li>
+                        <li><a href="">Apple Trade In</a></li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Shopping Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="fourth-col">
+                    <ul class="contentlist">
+                        <li class="listheading">For Business</li>
+                        <li><a href="">Apple and Business</a></li>
+                        <li><a href="">Shop for Business</a></li>
+                    </ul>
+
+                    <ul class="contentlist">
+                        <li class="listheading">For Education</li>
+                        <li><a href="">Apple and Education</a></li>
+                        <li><a href="">Shop for K-12</a></li>
+                        <li><a href="">Shop for College</a></li>
+                    </ul>
+
+                    
+                    <ul class="contentlist">
+                        <li class="listheading">For Healthcare</li>
+                        <li><a href="">Apple in Healthcare</a></li>
+                        <li><a href="">Health on Apple Watch</a></li>
+                        <li><a href="">Health records on iPhone</a></li>
+                    </ul>
+
+                    <ul class="contentlist">
+                        <li class="listheading">For Government</li>
+                        <li><a href="">Shop for Government</a></li>
+                        <li><a href="">Shop for Veterans and Military</a></li>
+                    </ul>
+                </div>
+
+                <div class="fifth-col">
+                    <ul class="contentlist">
+                        <li class="listheading">Apple Values</li>
+                        <li><a href="">Accessiblity</a></li>
+                        <li><a href="">Education</a></li>
+                        <li><a href="">Environment</a></li>
+                        <li><a href="">Inclusion and Diversity</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Racial Equity and Justice</a></li>
+                        <li><a href="">Supplier Responsibility</a></li>
+                    </ul>
+
+                    <ul class="contentlist">
+                        <li class="listheading">About Apple</li>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Apple Leadership</a></li>
+                        <li><a href="">Career Opportunities</a></li>
+                        <li><a href="">Investors</a></li>
+                        <li><a href="">Ethics & Compliance</a></li>
+                        <li><a href="">Events</a></li>
+                        <li><a href="">Contact Apple</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="src/index.js"></script>
 </body>
 </html>

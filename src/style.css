@@ -13,6 +13,10 @@ body{
 span:hover{
     text-decoration: none;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
 
  @media (max-width:768px){
     .nav-icon{

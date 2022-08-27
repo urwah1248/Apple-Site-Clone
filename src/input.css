@@ -7,22 +7,25 @@
       @apply md:text-5xl text-3xl font-semibold;
     }
     h2 {
-      @apply md:text-2xl text-xl;
+      @apply md:text-xl text-lg;
     }
     h3{
-      @apply text-5xl;
+      @apply md:text-4xl text-3xl;
+    }
+    .link{
+      @apply md:text-xl text-lg font-extralight;
     }
     .nav-item{
-      @apply md:mx-1 px-1 cursor-pointer hover:text-white md:py-0 py-2 md:text-xs text-xl font-semibold md:font-extralight;
+      @apply md:mx-auto px-1 cursor-pointer hover:text-white md:py-0 py-2 md:text-xs text-xl font-semibold md:font-extralight;
     }
     .tile-section{
-      @apply flex md:flex-row flex-col md:mx-10 md:my-5 justify-between;
+      @apply flex md:flex-row flex-col md:mx-3 justify-between;
     }
     .tile-light{
-      @apply text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] bg-white bg-no-repeat bg-cover bg-center ;
+      @apply text-center pt-10 w-full md:m-3 md:w-1/2 h-[500px] md:h-[560px] bg-white bg-no-repeat bg-auto bg-center ;
     }
     .tile-dark{
-      @apply text-center pt-10 w-full md:w-1/2 h-[500px] md:h-[560px] text-gray-200 bg-no-repeat bg-cover bg-center ;
+      @apply text-center pt-10 w-full md:m-3 md:w-1/2 h-[500px] md:h-[560px] text-gray-200 bg-no-repeat bg-cover bg-center ;
     }
     .menu-close{
       @apply hidden md:flex md:items-center md:w-auto md:mx-auto w-full order-3 md:order-1;
@@ -32,5 +35,14 @@
     }
     .nav-icon{
       @apply p-1 my-2 h-[30px] w-[30px] pr-[25%]
+    }
+    .contentlist{
+      @apply text-sm md:font-thin text-zinc-600 md:my-4
+    }
+    .contentlist li{
+      @apply md:py-1;
+    }
+    .listheading{
+      @apply md:block hidden text-black font-bold; 
     }
 }
