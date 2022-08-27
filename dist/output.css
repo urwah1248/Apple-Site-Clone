@@ -563,7 +563,10 @@ h3 {
 }
 
 .listheading {
-  display: none;
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -572,7 +575,21 @@ h3 {
 @media (min-width: 768px) {
   .listheading {
     display: block;
+    width: auto;
+    padding-left: 0px;
   }
+}
+
+.footerlinksection {
+  width: 100%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+}
+
+.footerlinksection li {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 *, ::before, ::after {
@@ -766,6 +783,10 @@ h3 {
   order: 3;
 }
 
+.float-right {
+  float: right;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -825,10 +846,6 @@ h3 {
 
 .flex {
   display: flex;
-}
-
-.grid {
-  display: grid;
 }
 
 .contents {
@@ -891,10 +908,6 @@ h3 {
 
 .list-decimal {
   list-style-type: decimal;
-}
-
-.grid-cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1228,6 +1241,10 @@ h3 {
   .md\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:flex {

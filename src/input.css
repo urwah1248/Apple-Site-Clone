@@ -43,6 +43,13 @@
       @apply md:py-1;
     }
     .listheading{
-      @apply md:block hidden text-black font-bold; 
+      @apply w-full py-3 pl-2;
+      @apply md:block md:w-auto md:pl-0 text-black font-bold; 
+    }
+    .footerlinksection{
+      @apply w-full py-3 pl-6;
+    }
+    .footerlinksection li{
+      @apply py-1
     }
 }
