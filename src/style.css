@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-@import url('/src/fonts/sf-pro-display.css'); 
+@import url('../src/fonts/sf-pro-display.css'); 
 
 body{
     font-family: 'SF Pro Display', sans-serif;
