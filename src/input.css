@@ -44,10 +44,10 @@
     }
     .listheading{
       @apply w-full py-3 pl-2;
-      @apply md:block md:w-auto md:pl-0 text-black font-bold; 
+      @apply md:block md:w-auto md:pl-0 text-zinc-500 hover:text-black hover:font-bold md:text-black md:font-bold; 
     }
     .footerlinksection{
-      @apply w-full py-3 pl-6;
+      @apply w-full py-3 pl-6 md:pl-0;
     }
     .footerlinksection li{
       @apply py-1

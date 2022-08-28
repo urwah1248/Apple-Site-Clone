@@ -15,16 +15,16 @@
         <div class="w-full md:flex mt-0 px-6 justify-center items-center">
             <div class="w-full flex flex-row md:hidden mt-0 px-6 justify-between items-center select-none">
                 <label for="menu-toggle" class="cursor-pointer md:hidden flex">
-                    <svg class="fill-current text-gray-300 my-auto" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <svg class="fill-current text-gray-300 my-auto hover:text-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                         <title>menu</title>
                         <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
                     </svg>
                 </label>
-                <button class="hidden" type="button" id="menu-toggle" onclick="classToggle()"></button>
+                <button class="hidden" type="button" id="menu-toggle" onclick="togglecontent('menu')"></button>
 
                 <div class="mob-navbar w-full flex md:hidden items-start justify-center text-center">
                     <img class="flex mx-auto" style="height: 40px; width: 40px;" src="src/media/applelogo.svg" alt="apple">
-                    <a href="" class="fill-current text-gray-300 my-auto"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a>
+                    <a href="" class="fill-current text-gray-300 my-auto hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/></svg></a>
                 </div> 
             </div>
            
@@ -153,6 +153,7 @@
             </div>
         </div>
     </main>
+
     <footer class="bg-[#f5f5f7] py-5">
         <div class="footer w-11/12 mx-auto">
             <div id="TOS" class="text-zinc-400 text-xs">
@@ -168,8 +169,8 @@
                 <div class="first-col">
                     <div class="desktop">
                         <ul id="shop" class="contentlist">
-                            <li class="listheading justify-between">Shop and Learn <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
-                            <div class=" footerlinksection md:block">
+                            <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footershop')">Shop and Learn <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                            <div class="hidden footerlinksection md:block" id="footershop">
                                 <li><a href="">Store</a></li>
                                 <li><a href="">Mac</a></li>
                                 <li><a href="">iPad</a></li>
@@ -185,53 +186,61 @@
                     </div>
                 </div>
                 <div class="second-col">
-                    <ul class="contentlist">
-                        <li class="listheading">Services</li>
-                        <li><a href="">Apple Music</a></li>
-                        <li><a href="">Apple TV+</a></li>
-                        <li><a href="">Apple Fitness+</a></li>
-                        <li><a href="">Apple News+</a></li>
-                        <li><a href="">Apple Arcade</a></li>
-                        <li><a href="">iCloud</a></li>
-                        <li><a href="">Apple One</a></li>
-                        <li><a href="">Apple Card</a></li>
-                        <li><a href="">Apple Books</a></li>
-                        <li><a href="">Apple Podcasts</a></li>
-                        <li><a href="">App Store</a></li>
+                    <ul id="services" class="contentlist">
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footerservices')">Services <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footerservices">
+                            <li><a href="">Apple Music</a></li>
+                            <li><a href="">Apple TV+</a></li>
+                            <li><a href="">Apple Fitness+</a></li>
+                            <li><a href="">Apple News+</a></li>
+                            <li><a href="">Apple Arcade</a></li>
+                            <li><a href="">iCloud</a></li>
+                            <li><a href="">Apple One</a></li>
+                            <li><a href="">Apple Card</a></li>
+                            <li><a href="">Apple Books</a></li>
+                            <li><a href="">Apple Podcasts</a></li>
+                            <li><a href="">App Store</a></li>
+                        </div>
                     </ul>
                     <ul class="contentlist">
-                        <li class="listheading">Account</li>
-                        <li><a href="">Manage your Apple ID</a></li>
-                        <li><a href="">Apple Store Account</a></li>
-                        <li><a href="">iCloud.com</a></li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footeraccount')">Account <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footeraccount">
+                            <li><a href="">Manage your Apple ID</a></li>
+                            <li><a href="">Apple Store Account</a></li>
+                            <li><a href="">iCloud.com</a></li>
+                        </div>
                     </ul>
                 </div>
 
                 <div class="third-col">
                     <ul class="contentlist">
-                        <li class="listheading">Apple Store</li>
-                        <li><a href="">Find a Store</a></li>
-                        <li><a href="">Genius Bar</a></li>
-                        <li><a href="">Today at Apple</a></li>
-                        <li><a href="">Apple Camp</a></li>
-                        <li><a href="">Apple Store App</a></li>
-                        <li><a href="">Refurbished and Clearance</a></li>
-                        <li><a href="">Financing</a></li>
-                        <li><a href="">Apple Trade In</a></li>
-                        <li><a href="">Order Status</a></li>
-                        <li><a href="">Shopping Help</a></li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footerapplestore')">Apple Store <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footerapplestore">
+                            <li><a href="">Find a Store</a></li>
+                            <li><a href="">Genius Bar</a></li>
+                            <li><a href="">Today at Apple</a></li>
+                            <li><a href="">Apple Camp</a></li>
+                            <li><a href="">Apple Store App</a></li>
+                            <li><a href="">Refurbished and Clearance</a></li>
+                            <li><a href="">Financing</a></li>
+                            <li><a href="">Apple Trade In</a></li>
+                            <li><a href="">Order Status</a></li>
+                            <li><a href="">Shopping Help</a></li>
+                        </div>
                     </ul>
                 </div>
 
                 <div class="fourth-col">
                     <ul class="contentlist">
-                        <li class="listheading">For Business</li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footerbusiness')">For Business <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footerbusiness">
                         <li><a href="">Apple and Business</a></li>
                         <li><a href="">Shop for Business</a></li>
                     </ul>
 
                     <ul class="contentlist">
-                        <li class="listheading">For Education</li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footereducation')">For Education <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footereducation">
                         <li><a href="">Apple and Education</a></li>
                         <li><a href="">Shop for K-12</a></li>
                         <li><a href="">Shop for College</a></li>
@@ -239,14 +248,16 @@
 
                     
                     <ul class="contentlist">
-                        <li class="listheading">For Healthcare</li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footerhealth')">For Healthcare <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footerhealth">
                         <li><a href="">Apple in Healthcare</a></li>
                         <li><a href="">Health on Apple Watch</a></li>
                         <li><a href="">Health records on iPhone</a></li>
                     </ul>
 
                     <ul class="contentlist">
-                        <li class="listheading">For Government</li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footergovt')">For Government <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footergovt">
                         <li><a href="">Shop for Government</a></li>
                         <li><a href="">Shop for Veterans and Military</a></li>
                     </ul>
@@ -254,7 +265,8 @@
 
                 <div class="fifth-col">
                     <ul class="contentlist">
-                        <li class="listheading">Apple Values</li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footervalues')">Apple Values <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footervalues">
                         <li><a href="">Accessiblity</a></li>
                         <li><a href="">Education</a></li>
                         <li><a href="">Environment</a></li>
@@ -265,7 +277,8 @@
                     </ul>
 
                     <ul class="contentlist">
-                        <li class="listheading">About Apple</li>
+                        <li class="listheading justify-between cursor-pointer" onclick="togglecontent('footerabout')">About Apple <span class="float-right md:hidden">+</span></li><hr class="md:hidden">
+                        <div class="hidden footerlinksection md:block" id="footerabout">
                         <li><a href="">Newsroom</a></li>
                         <li><a href="">Apple Leadership</a></li>
                         <li><a href="">Career Opportunities</a></li>
@@ -275,6 +288,24 @@
                         <li><a href="">Contact Apple</a></li>
                     </ul>
                 </div>
+            </div>
+            <div id="endingfooter" class="text-zinc-400 text-sm py-2">
+                <p>More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.</p>
+                <br>
+                <div class="flex lg:flex-row flex-col justify-between">
+                    
+                    <p>Copyright © 2022 Apple Inc. All rights reserved.</p>
+                    <p>
+                        <a href="" class="hover:text-black pr-1">Privacy Policy</a>|
+                        <a href="" class="hover:text-black px-1">Terms of Use</a>|
+                        <a href="" class="hover:text-black px-1">Sales and Refunds</a>|
+                        <a href="" class="hover:text-black px-1">Legal</a>|
+                        <a href="" class="hover:text-black px-1">Site Map</a>
+                    </p>
+                    <p class="text-black">United States</p>
+                </div>
+                
+                
             </div>
         </div>
     </footer>
