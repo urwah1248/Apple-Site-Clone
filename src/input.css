@@ -40,7 +40,7 @@
       @apply text-sm md:font-thin text-zinc-600 md:my-4
     }
     .contentlist li{
-      @apply md:py-1;
+      @apply md:py-1 hover:text-black;
     }
     .listheading{
       @apply w-full py-3 pl-2;
