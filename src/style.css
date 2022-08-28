@@ -1,59 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 400;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-Regular.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: italic;
-    font-weight: 100;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-UltralightItalic.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: italic;
-    font-weight: 200;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-ThinItalic.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: italic;
-    font-weight: 300;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-LightItalic.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 500;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-Medium.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: italic;
-    font-weight: 600;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-SemiboldItalic.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 700;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-Bold.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: italic;
-    font-weight: 800;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-HeavyItalic.ttf');
-}
-@font-face {
-    font-family: 'SF Pro Display';
-    font-style: italic;
-    font-weight: 900;
-    src: local('SF Pro Display'), url('../src/fonts/SFProDisplay-BlackItalic.ttf');
-}
-
 body{
     font-family: 'SF Pro Display', sans-serif;
 }
@@ -80,4 +24,5 @@ input:focus, textarea:focus, select:focus{
         padding-right: 15%;
     }
 } 
+
 
