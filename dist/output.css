@@ -595,6 +595,17 @@ h3 {
   }
 }
 
+.listheading {
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .listheading {
+    cursor: default;
+  }
+}
+
 .footerlinksection {
   width: 100%;
   padding-top: 0.75rem;
