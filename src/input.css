@@ -43,8 +43,8 @@
       @apply md:py-1 hover:text-black no-underline hover:underline;
     }
     .listheading{
-      @apply w-full pt-3 pl-2;
-      @apply md:block md:w-auto md:pl-0 text-zinc-500 hover:text-black hover:font-bold md:text-black md:font-bold; 
+      @apply w-full py-3 pl-2;
+      @apply md:block md:w-auto md:pl-0 text-zinc-500 hover:text-black md:text-black md:font-bold md:leading-none; 
       @apply justify-between cursor-pointer md:cursor-default;
     }
     .footerlinksection{
